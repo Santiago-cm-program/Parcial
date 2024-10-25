@@ -1,0 +1,62 @@
+/* Selecciona el cuerpo del HTML, funciona como etiqueta de selector */
+body {
+    /* Tipografia de letra */
+    font-family: sans-serif;
+   /*  Margin funciona como margen exterior */
+   margin: 0;
+
+}
+
+/* Selector de etiqueta, afecta todo el contenido que este dentro de la clase contenedor */
+.contenedor {
+    /* Contenedor de flex, se aplica la propiedad de display felx a un elemento padre, lo convierte en un contenedor flex */
+    display: flex;
+    /* Controla como se acomodan los elementos dentro de un contenedor */
+    flex-wrap: wrap;
+   /*  Distribuye de manera uniforme los elementos hijos a lo largo del contenedor prinicpal  */
+    justify-content:space-around ;
+   /*  afecta la margen interna  */
+    padding: 20px;
+}
+
+.tarjeta {
+    /* color al fondo de la etiqueta selecionada */
+    background-color: rgb(45, 42, 42);
+    /* define el ancho del elemento en 30px */ 
+    width: 500px;
+ /*    define la margen exterior del elemento en 30px */
+    margin: 10px;
+    /* genera borde a un elemento y lo define en grosor de 1px y el color */ 
+    border: 1px solid #ccc;
+    /*  afecta la margen interna  */
+    padding: 20px;
+   /*  define cuanto se redondean los border  */
+    border-radius: 5px;
+   /*  Agrega una sombra a un elemento especifico, en el cual segun la caracteristica define 0; desplazamiento horizontal, 2px; desplazamiento hacia abajo, 5px difuminado de la sombra y color */ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.tarjeta img {
+    /* define el ancho del elemento en 30px */ 
+    width: 100%;
+   /*  define el alto de un elemento en automatico en relacion a la ventana */
+    height: auto;
+    /* Controla como se muestran los elementos en la pagina, el block se utiliza como bloque independiente, ocupa el ancho del contenedor padre  */
+    display: block;
+     /*  define cuanto se redondean los border  */
+    border-radius: 5px 5px 0 0;
+
+}
+
+.tarjeta h3 {
+    /* define la margen superior  */
+    margin-top: 10px;
+}
+
+.tarjeta p {
+    /* define el tamaño de letra */
+    font-size: 0.9em;
+    /* espacio vertical de las lineas de texto  */
+    line-height: 1.5;
+}
